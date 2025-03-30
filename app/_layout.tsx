@@ -8,6 +8,7 @@ export default function Layout() {
       <Drawer
       screenOptions={{
           swipeEnabled: true,
+          headerTitle: 'KUTILNA',
           drawerActiveTintColor: 'white',
           drawerActiveBackgroundColor: '#3a2c1f',
           drawerInactiveTintColor: 'black',
@@ -28,35 +29,36 @@ export default function Layout() {
           name="uzivatel"
           options={{
             drawerLabel: 'Uživatel',
-            title: 'Uzivatel',
           }}
         />
         <Drawer.Screen
           name="index"
           options={{
             drawerLabel: 'KUTILNA',
-            title: 'KUTILNA',
           }}
         />
         <Drawer.Screen
           name="nastroje"
           options={{
             drawerLabel: 'Nástroje',
-            title: 'Nástroje',
           }}
         />
+        <Drawer.Screen
+        name="mafl"
+        options={{
+          drawerLabel: 'Ruční okružní pila',
+        }}
+      />
         <Drawer.Screen
           name="materialy"
           options={{
             drawerLabel: 'Materiály',
-            title: 'Materiály',
           }}
         />
         <Drawer.Screen
           name="oblibene"
           options={{
             drawerLabel: 'Oblíbené',
-            title: 'Oblíbené',
           }}
         />
 
