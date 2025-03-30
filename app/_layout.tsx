@@ -1,15 +1,33 @@
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { GestureHandlerRootView, Gesture } from 'react-native-gesture-handler';
 import { Drawer } from 'expo-router/drawer';
 import React from 'react';
 
 export default function Layout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Drawer>
+      <Drawer
+      screenOptions={{
+          swipeEnabled: true,
+          drawerActiveTintColor: 'white',
+          drawerActiveBackgroundColor: '#3a2c1f',
+          drawerInactiveTintColor: 'black',
+          drawerStyle: {
+            backgroundColor: '#d0b58c',
+            width: 200,
+          },
+          drawerLabelStyle: {
+            fontWeight: 'bold',
+          },
+          headerStyle: {
+            backgroundColor: '#946735',
+          },
+          headerTintColor: '#000000',
+        }}
+      >
         <Drawer.Screen
           name="uzivatel"
           options={{
-            drawerLabel: 'Uzivatel',
+            drawerLabel: 'Uživatel',
             title: 'Uzivatel',
           }}
         />
