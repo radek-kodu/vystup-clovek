@@ -7,7 +7,7 @@ export default function Mafl() {
         <Text style={styles.header1}>Ruční okružní pila</Text>
         <Text style={styles.header2}>Popis nástroje</Text>
         <Text style={styles.text}>Ruční ukružní pila, známá také jako mafl, se typicky skládá z:
-        <br></br><FlatList
+      <FlatList
         data={[
           {key: 'těla s elektrickým motorem'},
           {key: 'kotoučem - různé druhy dle materiálu'},
@@ -26,9 +26,9 @@ export default function Mafl() {
         <Text style={styles.header2}>Účel nástroje</Text>
         <Text style={styles.text}>Z hlediska řezání se jedná o jednu z nejvíce užívaných.
 
-<br></br>Díky řezání kotoučem můžeme jednoduše dosáhnout dlouhých rovných řezů. Zároveň ale může sloužit ke zkracování materiálu a dalším kratším řezům.
+Díky řezání kotoučem můžeme jednoduše dosáhnout dlouhých rovných řezů. Zároveň ale může sloužit ke zkracování materiálu a dalším kratším řezům.
 
-<br></br>Navíc, díky nastavitelné hloubce řezu, můžeme materiál řezat do požadované hloubky i ve složitých podmínkách, kdy například chceme proříznout pouze skrze jednu z vrstev do požadované hloubky.</Text>
+Navíc, díky nastavitelné hloubce řezu, můžeme materiál řezat do požadované hloubky i ve složitých podmínkách, kdy například chceme proříznout pouze skrze jednu z vrstev do požadované hloubky.</Text>
         <Text style={styles.header2}>Používání a bezpečnost</Text>
       <Text style={styles.text}>About screen</Text>
     </View>
